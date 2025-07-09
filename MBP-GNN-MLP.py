@@ -18,7 +18,7 @@ from sklearn.metrics import accuracy_score, balanced_accuracy_score, roc_auc_sco
 from torch_geometric.nn.models import AttentiveFP
 from torch_geometric.nn import GINEConv, GATv2Conv, global_add_pool
 
-# Download SMILES chemical dataset from Tox21
+# Download SMILES chemical dataset from Tox21 challenge
 url = "https://tripod.nih.gov/tox21/challenge/download?id={}".format("nr-arsmiles")
 urllib.request.urlretrieve(url, './input.smi')
 
